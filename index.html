@@ -1,15 +1,45 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Mon projet JavaScript avec Bootstrap et jQuery</title>
-    <!-- Inclure le fichier CSS de Bootstrap -->
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <meta charset="UTF-8" />
+    <title>Liste des tâches</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    ></script>
+    <script
+      defer
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    ></script>
   </head>
-  <body>
-    <h1>Bienvenue sur mon site de "todolist" !</h1>
 
-    <!-- Inclure les fichiers JavaScript de jQuery et Bootstrap -->
-    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <body>
+    <div class="container mt-5">
+      <h1>Liste des tâches</h1>
+      <form>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            id="new-todo-item"
+            placeholder="Enter a new to-do item"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Ajouter un objet</button>
+      </form>
+      <hr />
+      <ul class="list-group" id="todo-list">
+        <li class="list-group-item">
+          <input type="checkbox" class="mr-2" />Exemple
+          <button type="button" class="btn btn-danger btn-sm float-right">
+            Supprimer un objet
+          </button>
+        </li>
+      </ul>
+    </div>
   </body>
 </html>
