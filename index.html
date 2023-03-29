@@ -1,20 +1,12 @@
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <title>Liste des tâches</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    ></script>
-    <script
-      defer
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    ></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script defer src="./index.js"></script>
   </head>
 
   <body>
@@ -22,12 +14,7 @@
       <h1>Liste des tâches</h1>
       <form>
         <div class="form-group">
-          <input
-            type="text"
-            class="form-control"
-            id="new-todo-item"
-            placeholder="Enter a new to-do item"
-          />
+          <input type="text" class="form-control" id="new-todo-item" placeholder="Enter a new to-do item" />
         </div>
         <button type="submit" class="btn btn-primary">Ajouter un objet</button>
       </form>
@@ -35,9 +22,7 @@
       <ul class="list-group" id="todo-list">
         <li class="list-group-item">
           <input type="checkbox" class="mr-2" />Exemple
-          <button type="button" class="btn btn-danger btn-sm float-right">
-            Supprimer un objet
-          </button>
+          <button type="button" class="btn btn-danger btn-sm float-right">Supprimer un objet</button>
         </li>
       </ul>
     </div>
